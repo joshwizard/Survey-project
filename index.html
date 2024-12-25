@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1 id="title">Survey Form</h1>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <p id="description">Kindly provide genuine answers for us to improve our services</p>
+        <form action="" id="survey-form">
+            <fieldset>
+                <label for="name">Enter Your Name:<input type="text" id="name" placeholder="Joshua Muriki"></label>
+                <label for="email">Enter Your Email: <input type="email" id="email" placeholder="joshuamuriki@mail.com"></label>
+                <label for="number">Age (Optional): <input type="number" id="number" min="18" max="70" placeholder="Values between 18-70" required></label>
+            </fieldset>
+            <fieldset>
+                <label for="">Rate our services
+                    <select name="services" id="dropdown">
+                        <option value="">Excellent</option>
+                        <option value="">Very Good</option>
+                        <option value="">Good</option>
+                        <option value="">Fair</option>
+                        <option value="">Poor</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="" type="radio"> Would you recommend Jmax Services to a friend?
+                    <label for="Definitely"><input type="radio" id="Definitely" name="recommend" value="recommend">Definitely</label>
+                    <label for="Maybe"><input type="radio" id="Maybe" name="recommend" value="recommend">Maybe</label>
+                    <label for="Not"><input type="radio" id="Not" name="recommend" value="recommend">Not sure</label>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="">Tick the best services you recieved from us.
+                    <label for=""><input type="checkbox" value="architectural">Architectural design</label>
+                    <label for=""><input type="checkbox" value="structural">Structural design</label>
+                    <label for=""><input type="checkbox" value="interior">Interior design</label>
+                    <label for=""><input type="checkbox" value="landscape">Landscaping design</label>
+                    <label for=""><input type="checkbox" value="quantities">Bills of Quantities</label>
+                    <label for=""><input type="checkbox" value="Approvals">County Approvals</label>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for=""> Write briefly how we can improve our services
+                    <textarea name="" id="comments" placeholder="comment here..." cols="30" rows="4"></textarea>
+                </label>
+            </fieldset>
+            <button>
+                <input type="submit" id="submit">
+            </button>
+        </form>
+    </body>
+</html>
