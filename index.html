@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <h1 id="title">Survey Form</h1>
+        <h1 id="title">Amerix Community 2024 Survey Form</h1>
         <meta charset="utf-8">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <p id="description">Kindly provide genuine answers for us to improve our services</p>
+        <p id="description">Fill in the form appropriately</p>
         <form action="" id="survey-form">
-            <fieldset>
-                <label for="name">Enter Your Name:<input type="text" id="name" placeholder="Joshua Muriki"></label>
-                <label for="email">Enter Your Email: <input type="email" id="email" placeholder="joshuamuriki@mail.com"></label>
-                <label for="number">Age (Optional): <input type="number" id="number" min="18" max="70" placeholder="Values between 18-70" required></label>
-            </fieldset>
-            <fieldset>
-                <label for="">Rate our services
+            <div>
+                <label for="name">Name<input type="text" id="name" placeholder="John Doe"></label>
+                <label for="name">Country<input type="text" id="name" placeholder="Kenya"></label>
+                <label for="phone">Phone number <input type="number" id="number" min="18" max="70" placeholder="Start with your Country code Ex. 254 700 000 000" min="12" max="12" required></label>
+                <label for="number">Age <input type="number" id="number" min="18" max="70" placeholder="Values between 18-70" required></label>
+            </div>
+            <div>
+                <label for="">Gender
+                    <label for=""><input type="radio" name="gender" class="inline" checked>Male</label>
+                    <label for=""><input type="radio" name="gender" class="inline">Female</label>
+                </label>
+            </div>
+            <div>
+                <label for="">Which option best describes Amerix Community Services?
                     <select name="services" id="dropdown">
                         <option value="">Excellent</option>
                         <option value="">Very Good</option>
@@ -23,29 +30,31 @@
                         <option value="">Poor</option>
                     </select>
                 </label>
-            </fieldset>
-            <fieldset>
-                <label for="" type="radio"> Would you recommend Jmax Services to a friend?
-                    <label for="Definitely"><input type="radio" id="Definitely" name="recommend" value="recommend">Definitely</label>
-                    <label for="Maybe"><input type="radio" id="Maybe" name="recommend" value="recommend">Maybe</label>
-                    <label for="Not"><input type="radio" id="Not" name="recommend" value="recommend">Not sure</label>
+            </div>
+            <div>
+                <label for="" type="radio"> What platform best suites you?
+                    <label for="telegram"><input type="radio" id="telegram" name="platform" value="platform">Warriors Channel on Telegram</label>
+                    <label for="twitter"><input type="radio" id="twitter" name="platform" value="platform">Amerix on Twitter</label>
                 </label>
-            </fieldset>
-            <fieldset>
-                <label for="">Tick the best services you recieved from us.
-                    <label for=""><input type="checkbox" value="architectural">Architectural design</label>
-                    <label for=""><input type="checkbox" value="structural">Structural design</label>
-                    <label for=""><input type="checkbox" value="interior">Interior design</label>
-                    <label for=""><input type="checkbox" value="landscape">Landscaping design</label>
-                    <label for=""><input type="checkbox" value="quantities">Bills of Quantities</label>
-                    <label for=""><input type="checkbox" value="Approvals">County Approvals</label>
+            </div>
+            <div>
+                <label for="">What is your favourite Amerix Community service you have received? (Select five options)
+                    <label for=""><input type="checkbox" value="routine">Morning Routine</label>
+                    <label for=""><input type="checkbox" value="masculinity">Masculinity Lessons</label>
+                    <label for=""><input type="checkbox" value="nutrition">Nutrition & Health</label>
+                    <label for=""><input type="checkbox" value="bootcamps">Bootcamps</label>
+                    <label for=""><input type="checkbox" value="chat">Telegram Voice Chat</label>
+                    <label for=""><input type="checkbox" value="programs">Wellness Programs</label>
+                    <label for=""><input type="checkbox" value="library">Library & Skill building</label>
+                    <label for=""><input type="checkbox" value="fitness">Physical fitness</label>
+                    <label for=""><input type="checkbox" value="money">Money & Finance</label>
                 </label>
-            </fieldset>
-            <fieldset>
-                <label for=""> Write briefly how we can improve our services
+            </div>
+            <div>
+                <label for=""> Write briefly how Amerix Community has changed your life.
                     <textarea name="" id="comments" placeholder="comment here..." cols="30" rows="4"></textarea>
                 </label>
-            </fieldset>
+            </div>
             <button>
                 <input type="submit" id="submit">
             </button>
