@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <h1 id="title">Amerix Community 2024 Survey Form</h1>
         <meta charset="utf-8">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <div class="container">
-            <p id="description">Fill in the form appropriately</p>
+            <header>
+                <h1 id="title">Amerix Community 2024 Survey Form</h1>
+                <p id="description">Fill in the form appropriately</p>
+            </header>
             <form action="" id="survey-form">
                 <div class="form-major">
                     <label for="name">Name<input type="text" id="name" placeholder="Enter your name" class="form-a"></label>
@@ -34,8 +36,8 @@
                 </div>
                 <div class="form-major">
                     <label for="" type="radio"> What platform best suites you?
-                        <label for="telegram"><input type="radio" id="telegram" name="platform" value="platform">Warriors Channel on Telegram</label>
-                        <label for="twitter"><input type="radio" id="twitter" name="platform" value="platform">Amerix on Twitter</label>
+                        <label for="telegram"><input type="radio" id="telegram" name="platform" value="platform" class="inline" checked>Warriors Channel on Telegram</label>
+                        <label for="twitter"><input type="radio" id="twitter" name="platform" value="platform" class="inline">Amerix on Twitter</label>
                     </label>
                 </div>
                 <div class="form-major">
@@ -53,7 +55,7 @@
                 </div>
                 <div class="form-major">
                     <label for=""> Write briefly how Amerix Community has changed your life.
-                        <textarea name="" id="comments" placeholder="comment here..." cols="30" rows="4"></textarea>
+                        <textarea name="" id="comments" placeholder="comment here..." cols="30" rows="10"></textarea>
                     </label>
                 </div>
                 <button>
