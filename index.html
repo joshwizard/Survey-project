@@ -5,11 +5,13 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="container">
-            <header>
+        <div class="header">
+            <header >
                 <h1 id="title">Amerix Community 2024 Survey Form</h1>
-                <p id="description">Fill in the form appropriately</p>
+                <p class="description">Fill in the form appropriately</p>
             </header>
+        </div>
+        <div class="container">
             <form action="" id="survey-form">
                 <div class="form-major">
                     <label for="name">Name<input type="text" id="name" placeholder="Enter your name" class="form-a"></label>
@@ -17,15 +19,17 @@
                     <label for="phone">Phone number <input type="number" id="number" min="18" max="70" placeholder="Enter your phone number" min="12" max="12" class="form-a" required></label>
                     <label for="number">Age <input type="number" id="number" min="18" max="70" placeholder="Age" class="form-a" required></label>
                 </div>
-                <div class="form-major">
-                    <label for="">Gender
-                        <label for=""><input type="radio" name="gender" class="inline" checked>Male</label>
-                        <label for=""><input type="radio" name="gender" class="inline">Female</label>
+                <hr>
+                <div class="gender">
+                    <label for=""> Gender
+                        <label for=""><input type="radio" name="gender" class="radio_gender" checked>Male</label>
+                        <label for=""><input type="radio" name="gender" class="radio_gender">Female</label>
                     </label>
                 </div>
-                <div class="form-major">
+                <hr>
+                <div class="option">
                     <label for="">Which option best describes Amerix Community Services?
-                        <select name="services" id="dropdown">
+                        <select name="services" id="dropdown" class="option-control">
                             <option value="">Excellent</option>
                             <option value="">Very Good</option>
                             <option value="">Good</option>
@@ -34,14 +38,16 @@
                         </select>
                     </label>
                 </div>
-                <div class="form-major">
+                <hr>
+                <div class="platform">
                     <label for="" type="radio"> What platform best suites you?
                         <label for="telegram"><input type="radio" id="telegram" name="platform" value="platform" class="inline" checked>Warriors Channel on Telegram</label>
                         <label for="twitter"><input type="radio" id="twitter" name="platform" value="platform" class="inline">Amerix on Twitter</label>
                     </label>
                 </div>
-                <div class="form-major">
-                    <label for="">What is your favourite Amerix Community service you have received? (Select five options)
+                <hr>
+                <div class="check">
+                    <label for="">What is your favourite Amerix Community service you have received? 
                         <label for=""><input type="checkbox" value="routine" class="service">Morning Routine</label>
                         <label for=""><input type="checkbox" value="masculinity" class="service">Masculinity Lessons</label>
                         <label for=""><input type="checkbox" value="nutrition" class="service">Nutrition & Health</label>
@@ -53,14 +59,17 @@
                         <label for=""><input type="checkbox" value="money" class="service">Money & Finance</label>
                     </label>
                 </div>
-                <div class="form-major">
-                    <label for=""> Write briefly how Amerix Community has changed your life.
-                        <textarea name="" id="comments" placeholder="comment here..." cols="30" rows="10"></textarea>
+                <hr>
+                <div class="check">
+                    <label for=""> Explain briefly and authentically, how Amerix Community has changed your life.
+                        <textarea name="" id="comments" placeholder="comment here..." cols="30" rows="30" class="text"></textarea>
                     </label>
                 </div>
-                <button>
-                    <input type="submit" id="submit">
-                </button>
+                <div>
+                    <button type="submit" class="submit-button">
+                        Submit
+                    </button>
+                </div>
             </form>
         </div>
     </body>
